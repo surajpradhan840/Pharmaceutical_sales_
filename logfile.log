@@ -1,0 +1,1687 @@
+2023-08-29 23:32:47,181 - DEBUG - This is a debug message - 31
+2023-08-29 23:32:47,184 - INFO - This is an info message - 32
+2023-08-29 23:32:47,187 - WARNING - This is a warning message - 33
+2023-08-29 23:32:47,189 - ERROR - This is an error message - 34
+2023-08-29 23:32:47,189 - CRITICAL - This is a critical message - 35
+2023-08-29 23:32:47,189 - INFO - Program started. - 52
+2023-08-29 23:32:47,189 - INFO - Starting my_function... - 39
+2023-08-29 23:32:47,195 - INFO - Result: 5.0 - 44
+2023-08-29 23:32:47,195 - INFO - Finished my_function. - 48
+2023-08-29 23:32:47,195 - INFO - Program finished. - 54
+2023-08-29 23:32:47,267 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/train.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/train.csv'
+2023-08-29 23:32:47,269 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/test.csv' - 29
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 24, in get_test_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/test.csv'
+2023-08-29 23:32:47,273 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/sample_submission.csv' - 51
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 46, in get_sample_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/sample_submission.csv'
+2023-08-29 23:32:47,273 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/store.csv' - 40
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 35, in get_store_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/store.csv'
+2023-08-29 23:32:48,004 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/train.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/train.csv'
+2023-08-29 23:32:48,012 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/store.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/store.csv'
+2023-08-29 23:32:48,012 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/test.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/test.csv'
+2023-08-29 23:32:48,012 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/sample_submission.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/sample_submission.csv'
+2023-08-29 23:34:18,120 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/train.csv.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/train.csv.csv'
+2023-08-29 23:34:18,120 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/store.csv.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/store.csv.csv'
+2023-08-29 23:34:18,125 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/test.csv.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/test.csv.csv'
+2023-08-29 23:34:18,125 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/sample_submission.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/sample_submission.csv'
+2023-08-29 23:34:34,607 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/train.csv.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/train.csv.csv'
+2023-08-29 23:34:34,607 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/store.csv.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/store.csv.csv'
+2023-08-29 23:34:34,607 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/test.csv.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/test.csv.csv'
+2023-08-29 23:34:34,607 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/sample_submission.csv.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/sample_submission.csv.csv'
+2023-08-29 23:39:52,670 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/train.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/train.csv'
+2023-08-29 23:39:52,670 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/test.csv' - 29
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 24, in get_test_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/test.csv'
+2023-08-29 23:39:52,673 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/sample_submission.csv' - 51
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 46, in get_sample_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/sample_submission.csv'
+2023-08-29 23:39:52,673 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/store.csv' - 40
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 35, in get_store_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/store.csv'
+2023-08-29 23:39:53,861 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/train.csv.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/train.csv.csv'
+2023-08-29 23:39:53,861 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/store.csv.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/store.csv.csv'
+2023-08-29 23:39:53,861 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/test.csv.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/test.csv.csv'
+2023-08-29 23:39:53,861 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/sample_submission.csv.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/sample_submission.csv.csv'
+2023-08-29 23:40:53,432 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/train.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/train.csv'
+2023-08-29 23:40:53,432 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/test.csv' - 29
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 24, in get_test_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/test.csv'
+2023-08-29 23:40:53,432 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/sample_submission.csv' - 51
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 46, in get_sample_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/sample_submission.csv'
+2023-08-29 23:40:53,435 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/store.csv' - 40
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 35, in get_store_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/store.csv'
+2023-08-29 23:40:54,747 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/train.csv.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/train.csv.csv'
+2023-08-29 23:40:54,747 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/store.csv.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/store.csv.csv'
+2023-08-29 23:40:54,747 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/test.csv.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/test.csv.csv'
+2023-08-29 23:40:54,747 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/sample_submission.csv.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/sample_submission.csv.csv'
+2023-08-29 23:43:22,206 - DEBUG - This is a debug message - 31
+2023-08-29 23:43:22,211 - INFO - This is an info message - 32
+2023-08-29 23:43:22,213 - WARNING - This is a warning message - 33
+2023-08-29 23:43:22,215 - ERROR - This is an error message - 34
+2023-08-29 23:43:22,220 - CRITICAL - This is a critical message - 35
+2023-08-29 23:43:22,223 - INFO - Program started. - 52
+2023-08-29 23:43:22,226 - INFO - Starting my_function... - 39
+2023-08-29 23:43:22,229 - INFO - Result: 5.0 - 44
+2023-08-29 23:43:22,231 - INFO - Finished my_function. - 48
+2023-08-29 23:43:22,235 - INFO - Program finished. - 54
+2023-08-29 23:43:34,070 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/train.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/train.csv'
+2023-08-29 23:43:34,070 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/test.csv' - 29
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 24, in get_test_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/test.csv'
+2023-08-29 23:43:34,070 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/sample_submission.csv' - 51
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 46, in get_sample_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/sample_submission.csv'
+2023-08-29 23:43:34,075 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/store.csv' - 40
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 35, in get_store_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/store.csv'
+2023-08-29 23:44:54,852 - DEBUG - This is a debug message - 31
+2023-08-29 23:44:54,857 - INFO - This is an info message - 32
+2023-08-29 23:44:54,860 - WARNING - This is a warning message - 33
+2023-08-29 23:44:54,863 - ERROR - This is an error message - 34
+2023-08-29 23:44:54,866 - CRITICAL - This is a critical message - 35
+2023-08-29 23:44:54,868 - INFO - Program started. - 52
+2023-08-29 23:44:54,871 - INFO - Starting my_function... - 39
+2023-08-29 23:44:54,871 - INFO - Result: 5.0 - 44
+2023-08-29 23:44:54,877 - INFO - Finished my_function. - 48
+2023-08-29 23:44:54,878 - INFO - Program finished. - 54
+2023-08-29 23:44:57,646 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/train.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/train.csv'
+2023-08-29 23:44:57,646 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/test.csv' - 29
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 24, in get_test_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/test.csv'
+2023-08-29 23:44:57,646 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/sample_submission.csv' - 51
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 46, in get_sample_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/sample_submission.csv'
+2023-08-29 23:44:57,646 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/store.csv' - 40
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 35, in get_store_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/store.csv'
+2023-08-29 23:48:44,101 - ERROR - Error occurred during 'do_something' function. - 13
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1588697528.py", line 11, in do_something
+    result = 10 / 0  # Trigger a ZeroDivisionError for demonstration
+ZeroDivisionError: division by zero
+2023-08-29 23:48:48,908 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/train.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/train.csv'
+2023-08-29 23:48:48,908 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/test.csv' - 29
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 24, in get_test_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/test.csv'
+2023-08-29 23:48:48,908 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/sample_submission.csv' - 51
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 46, in get_sample_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/sample_submission.csv'
+2023-08-29 23:48:48,910 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/store.csv' - 40
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 35, in get_store_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/store.csv'
+2023-08-29 23:50:13,534 - INFO - Adding days_to/from holiday to          Store  DayOfWeek       Date  Sales  Customers  Open  Promo  \
+0            1          5 2015-07-31   5263        555     1      1   
+1            2          5 2015-07-31   6064        625     1      1   
+2            3          5 2015-07-31   8314        821     1      1   
+3            4          5 2015-07-31  13995       1498     1      1   
+4            5          5 2015-07-31   4822        559     1      1   
+...        ...        ...        ...    ...        ...   ...    ...   
+1017204   1111          2 2013-01-01      0          0     0      0   
+1017205   1112          2 2013-01-01      0          0     0      0   
+1017206   1113          2 2013-01-01      0          0     0      0   
+1017207   1114          2 2013-01-01      0          0     0      0   
+1017208   1115          2 2013-01-01      0          0     0      0   
+
+        StateHoliday  SchoolHoliday  Year  Month  Day  WeekOfYear  \
+0                  0              1  2015      7   31          31   
+1                  0              1  2015      7   31          31   
+2                  0              1  2015      7   31          31   
+3                  0              1  2015      7   31          31   
+4                  0              1  2015      7   31          31   
+...              ...            ...   ...    ...  ...         ...   
+1017204            a              1  2013      1    1           1   
+1017205            a              1  2013      1    1           1   
+1017206            a              1  2013      1    1           1   
+1017207            a              1  2013      1    1           1   
+1017208            a              1  2013      1    1           1   
+
+         Weekofmonth  days_to_from_hol  
+0                  5                57  
+1                  5                57  
+2                  5                57  
+3                  5                57  
+4                  5                57  
+...              ...               ...  
+1017204            1                 0  
+1017205            1                 0  
+1017206            1                 0  
+1017207            1                 0  
+1017208            1                 0  
+
+[1017209 rows x 15 columns] dataset, successfully - 7
+2023-08-29 23:50:13,548 - INFO - Adding days_to/from holiday to           Id  Store  DayOfWeek       Date  Open  Promo StateHoliday  \
+0          1      1          4 2015-09-17   1.0      1            0   
+1          2      3          4 2015-09-17   1.0      1            0   
+2          3      7          4 2015-09-17   1.0      1            0   
+3          4      8          4 2015-09-17   1.0      1            0   
+4          5      9          4 2015-09-17   1.0      1            0   
+...      ...    ...        ...        ...   ...    ...          ...   
+41083  41084   1111          6 2015-08-01   1.0      0            0   
+41084  41085   1112          6 2015-08-01   1.0      0            0   
+41085  41086   1113          6 2015-08-01   1.0      0            0   
+41086  41087   1114          6 2015-08-01   1.0      0            0   
+41087  41088   1115          6 2015-08-01   1.0      0            0   
+
+       SchoolHoliday  Year  Month  Day  WeekOfYear  Weekofmonth  \
+0                  0  2015      9   17          38            3   
+1                  0  2015      9   17          38            3   
+2                  0  2015      9   17          38            3   
+3                  0  2015      9   17          38            3   
+4                  0  2015      9   17          38            3   
+...              ...   ...    ...  ...         ...          ...   
+41083              0  2015      8    1          31            1   
+41084              0  2015      8    1          31            1   
+41085              0  2015      8    1          31            1   
+41086              0  2015      8    1          31            1   
+41087              1  2015      8    1          31            1   
+
+       days_to_from_hol  
+0                    33  
+1                    33  
+2                    33  
+3                    33  
+4                    33  
+...                 ...  
+41083                14  
+41084                14  
+41085                14  
+41086                14  
+41087                14  
+
+[41088 rows x 14 columns] dataset, successfully - 7
+2023-08-29 23:50:14,304 - INFO -  Joining          Store  DayOfWeek       Date  Sales  Customers  Open  Promo  \
+0            1          5 2015-07-31   5263        555     1      1   
+1            2          5 2015-07-31   6064        625     1      1   
+2            3          5 2015-07-31   8314        821     1      1   
+3            4          5 2015-07-31  13995       1498     1      1   
+4            5          5 2015-07-31   4822        559     1      1   
+...        ...        ...        ...    ...        ...   ...    ...   
+1017204   1111          2 2013-01-01      0          0     0      0   
+1017205   1112          2 2013-01-01      0          0     0      0   
+1017206   1113          2 2013-01-01      0          0     0      0   
+1017207   1114          2 2013-01-01      0          0     0      0   
+1017208   1115          2 2013-01-01      0          0     0      0   
+
+        StateHoliday  SchoolHoliday  Year  Month  Day  WeekOfYear  \
+0                  0              1  2015      7   31          31   
+1                  0              1  2015      7   31          31   
+2                  0              1  2015      7   31          31   
+3                  0              1  2015      7   31          31   
+4                  0              1  2015      7   31          31   
+...              ...            ...   ...    ...  ...         ...   
+1017204            a              1  2013      1    1           1   
+1017205            a              1  2013      1    1           1   
+1017206            a              1  2013      1    1           1   
+1017207            a              1  2013      1    1           1   
+1017208            a              1  2013      1    1           1   
+
+         Weekofmonth  days_to_from_hol  
+0                  5                57  
+1                  5                57  
+2                  5                57  
+3                  5                57  
+4                  5                57  
+...              ...               ...  
+1017204            1                 0  
+1017205            1                 0  
+1017206            1                 0  
+1017207            1                 0  
+1017208            1                 0  
+
+[1017209 rows x 15 columns] and       Store StoreType Assortment  CompetitionDistance  \
+0         1         c          a               1270.0   
+1         2         a          a                570.0   
+2         3         a          a              14130.0   
+3         4         c          c                620.0   
+4         5         a          a              29910.0   
+...     ...       ...        ...                  ...   
+1110   1111         a          a               1900.0   
+1111   1112         c          c               1880.0   
+1112   1113         a          c               9260.0   
+1113   1114         a          c                870.0   
+1114   1115         d          c               5350.0   
+
+      CompetitionOpenSinceMonth  CompetitionOpenSinceYear  Promo2  \
+0                           9.0                    2008.0       0   
+1                          11.0                    2007.0       1   
+2                          12.0                    2006.0       1   
+3                           9.0                    2009.0       0   
+4                           4.0                    2015.0       0   
+...                         ...                       ...     ...   
+1110                        6.0                    2014.0       1   
+1111                        4.0                    2006.0       0   
+1112                        9.0                    2013.0       0   
+1113                        9.0                    2013.0       0   
+1114                        9.0                    2013.0       1   
+
+      Promo2SinceWeek  Promo2SinceYear     PromoInterval  
+0                 0.0              0.0                 0  
+1                13.0           2010.0   Jan,Apr,Jul,Oct  
+2                14.0           2011.0   Jan,Apr,Jul,Oct  
+3                 0.0              0.0                 0  
+4                 0.0              0.0                 0  
+...               ...              ...               ...  
+1110             31.0           2013.0   Jan,Apr,Jul,Oct  
+1111              0.0              0.0                 0  
+1112              0.0              0.0                 0  
+1113              0.0              0.0                 0  
+1114             22.0           2012.0  Mar,Jun,Sept,Dec  
+
+[1115 rows x 10 columns] datasets successfully - 91
+2023-08-29 23:50:14,304 - INFO - Joining store data to train and test datasets succefully - 4
+2023-08-29 23:56:19,667 - INFO - Adding days_to/from holiday to          Store  DayOfWeek       Date  Sales  Customers  Open  Promo  \
+0            1          5 2015-07-31   5263        555     1      1   
+1            2          5 2015-07-31   6064        625     1      1   
+2            3          5 2015-07-31   8314        821     1      1   
+3            4          5 2015-07-31  13995       1498     1      1   
+4            5          5 2015-07-31   4822        559     1      1   
+...        ...        ...        ...    ...        ...   ...    ...   
+1017204   1111          2 2013-01-01      0          0     0      0   
+1017205   1112          2 2013-01-01      0          0     0      0   
+1017206   1113          2 2013-01-01      0          0     0      0   
+1017207   1114          2 2013-01-01      0          0     0      0   
+1017208   1115          2 2013-01-01      0          0     0      0   
+
+        StateHoliday  SchoolHoliday  Year  Month  Day  WeekOfYear  \
+0                  0              1  2015      7   31          31   
+1                  0              1  2015      7   31          31   
+2                  0              1  2015      7   31          31   
+3                  0              1  2015      7   31          31   
+4                  0              1  2015      7   31          31   
+...              ...            ...   ...    ...  ...         ...   
+1017204            a              1  2013      1    1           1   
+1017205            a              1  2013      1    1           1   
+1017206            a              1  2013      1    1           1   
+1017207            a              1  2013      1    1           1   
+1017208            a              1  2013      1    1           1   
+
+         Weekofmonth  days_to_from_hol  
+0                  5                57  
+1                  5                57  
+2                  5                57  
+3                  5                57  
+4                  5                57  
+...              ...               ...  
+1017204            1                 0  
+1017205            1                 0  
+1017206            1                 0  
+1017207            1                 0  
+1017208            1                 0  
+
+[1017209 rows x 15 columns] dataset, successfully - 7
+2023-08-29 23:56:19,676 - INFO - Adding days_to/from holiday to           Id  Store  DayOfWeek       Date  Open  Promo StateHoliday  \
+0          1      1          4 2015-09-17   1.0      1            0   
+1          2      3          4 2015-09-17   1.0      1            0   
+2          3      7          4 2015-09-17   1.0      1            0   
+3          4      8          4 2015-09-17   1.0      1            0   
+4          5      9          4 2015-09-17   1.0      1            0   
+...      ...    ...        ...        ...   ...    ...          ...   
+41083  41084   1111          6 2015-08-01   1.0      0            0   
+41084  41085   1112          6 2015-08-01   1.0      0            0   
+41085  41086   1113          6 2015-08-01   1.0      0            0   
+41086  41087   1114          6 2015-08-01   1.0      0            0   
+41087  41088   1115          6 2015-08-01   1.0      0            0   
+
+       SchoolHoliday  Year  Month  Day  WeekOfYear  Weekofmonth  \
+0                  0  2015      9   17          38            3   
+1                  0  2015      9   17          38            3   
+2                  0  2015      9   17          38            3   
+3                  0  2015      9   17          38            3   
+4                  0  2015      9   17          38            3   
+...              ...   ...    ...  ...         ...          ...   
+41083              0  2015      8    1          31            1   
+41084              0  2015      8    1          31            1   
+41085              0  2015      8    1          31            1   
+41086              0  2015      8    1          31            1   
+41087              1  2015      8    1          31            1   
+
+       days_to_from_hol  
+0                    33  
+1                    33  
+2                    33  
+3                    33  
+4                    33  
+...                 ...  
+41083                14  
+41084                14  
+41085                14  
+41086                14  
+41087                14  
+
+[41088 rows x 14 columns] dataset, successfully - 7
+2023-08-29 23:56:20,276 - INFO -  Joining          Store  DayOfWeek       Date  Sales  Customers  Open  Promo  \
+0            1          5 2015-07-31   5263        555     1      1   
+1            2          5 2015-07-31   6064        625     1      1   
+2            3          5 2015-07-31   8314        821     1      1   
+3            4          5 2015-07-31  13995       1498     1      1   
+4            5          5 2015-07-31   4822        559     1      1   
+...        ...        ...        ...    ...        ...   ...    ...   
+1017204   1111          2 2013-01-01      0          0     0      0   
+1017205   1112          2 2013-01-01      0          0     0      0   
+1017206   1113          2 2013-01-01      0          0     0      0   
+1017207   1114          2 2013-01-01      0          0     0      0   
+1017208   1115          2 2013-01-01      0          0     0      0   
+
+        StateHoliday  SchoolHoliday  Year  Month  Day  WeekOfYear  \
+0                  0              1  2015      7   31          31   
+1                  0              1  2015      7   31          31   
+2                  0              1  2015      7   31          31   
+3                  0              1  2015      7   31          31   
+4                  0              1  2015      7   31          31   
+...              ...            ...   ...    ...  ...         ...   
+1017204            a              1  2013      1    1           1   
+1017205            a              1  2013      1    1           1   
+1017206            a              1  2013      1    1           1   
+1017207            a              1  2013      1    1           1   
+1017208            a              1  2013      1    1           1   
+
+         Weekofmonth  days_to_from_hol  
+0                  5                57  
+1                  5                57  
+2                  5                57  
+3                  5                57  
+4                  5                57  
+...              ...               ...  
+1017204            1                 0  
+1017205            1                 0  
+1017206            1                 0  
+1017207            1                 0  
+1017208            1                 0  
+
+[1017209 rows x 15 columns] and       Store StoreType Assortment  CompetitionDistance  \
+0         1         c          a               1270.0   
+1         2         a          a                570.0   
+2         3         a          a              14130.0   
+3         4         c          c                620.0   
+4         5         a          a              29910.0   
+...     ...       ...        ...                  ...   
+1110   1111         a          a               1900.0   
+1111   1112         c          c               1880.0   
+1112   1113         a          c               9260.0   
+1113   1114         a          c                870.0   
+1114   1115         d          c               5350.0   
+
+      CompetitionOpenSinceMonth  CompetitionOpenSinceYear  Promo2  \
+0                           9.0                    2008.0       0   
+1                          11.0                    2007.0       1   
+2                          12.0                    2006.0       1   
+3                           9.0                    2009.0       0   
+4                           4.0                    2015.0       0   
+...                         ...                       ...     ...   
+1110                        6.0                    2014.0       1   
+1111                        4.0                    2006.0       0   
+1112                        9.0                    2013.0       0   
+1113                        9.0                    2013.0       0   
+1114                        9.0                    2013.0       1   
+
+      Promo2SinceWeek  Promo2SinceYear     PromoInterval  
+0                 0.0              0.0                 0  
+1                13.0           2010.0   Jan,Apr,Jul,Oct  
+2                14.0           2011.0   Jan,Apr,Jul,Oct  
+3                 0.0              0.0                 0  
+4                 0.0              0.0                 0  
+...               ...              ...               ...  
+1110             31.0           2013.0   Jan,Apr,Jul,Oct  
+1111              0.0              0.0                 0  
+1112              0.0              0.0                 0  
+1113              0.0              0.0                 0  
+1114             22.0           2012.0  Mar,Jun,Sept,Dec  
+
+[1115 rows x 10 columns] datasets successfully - 91
+2023-08-29 23:56:20,308 - INFO - Joining store data to train and test datasets succefully - 4
+2023-08-29 23:56:21,816 - INFO - Changing non-numeric to numeric values, successfully - 8
+2023-08-29 23:56:21,988 - INFO - Changing non-numeric to numeric values, successfully - 8
+2023-08-29 23:56:22,138 - INFO - Changing non-numeric to numeric values, successfully - 8
+2023-08-29 23:56:22,349 - INFO - Changing non-numeric to numeric values, successfully - 8
+2023-08-29 23:56:22,356 - INFO - Changing non-numeric to numeric values, successfully - 13
+2023-08-29 23:56:22,363 - INFO - Changing non-numeric to numeric values, successfully - 13
+2023-08-29 23:56:22,369 - INFO - Changing non-numeric to numeric values, successfully - 13
+2023-08-29 23:56:22,376 - INFO - Changing non-numeric to numeric values, successfully - 13
+2023-08-29 23:56:22,403 - INFO - Changing non-numeric to numeric values, successfully - 5
+2023-08-29 23:56:55,684 - INFO - Dataset Normalizing successfully - 29
+2023-08-29 23:59:34,744 - WARNING - This is a warning - 24
+2023-08-29 23:59:34,750 - ERROR - This is an error - 25
+2023-08-30 00:02:26,624 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/train.csv' - 18
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 13, in get_train_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/train.csv'
+2023-08-30 00:02:26,628 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/test.csv' - 29
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 24, in get_test_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/test.csv'
+2023-08-30 00:02:26,628 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/sample_submission.csv' - 51
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 46, in get_sample_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/sample_submission.csv'
+2023-08-30 00:02:26,628 - ERROR -  Exception occured in reading dataset, [Errno 2] No such file or directory: '../data/store.csv' - 40
+Traceback (most recent call last):
+  File "C:\Users\Suraj\AppData\Local\Temp\ipykernel_37836\1978015047.py", line 35, in get_store_data
+    df = pd.read_csv(filename)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Suraj\anaconda3\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/store.csv'
+2023-08-30 00:03:42,497 - INFO - Adding days_to/from holiday to          Store  DayOfWeek       Date  Sales  Customers  Open  Promo  \
+0            1          5 2015-07-31   5263        555     1      1   
+1            2          5 2015-07-31   6064        625     1      1   
+2            3          5 2015-07-31   8314        821     1      1   
+3            4          5 2015-07-31  13995       1498     1      1   
+4            5          5 2015-07-31   4822        559     1      1   
+...        ...        ...        ...    ...        ...   ...    ...   
+1017204   1111          2 2013-01-01      0          0     0      0   
+1017205   1112          2 2013-01-01      0          0     0      0   
+1017206   1113          2 2013-01-01      0          0     0      0   
+1017207   1114          2 2013-01-01      0          0     0      0   
+1017208   1115          2 2013-01-01      0          0     0      0   
+
+        StateHoliday  SchoolHoliday  Year  Month  Day  WeekOfYear  \
+0                  0              1  2015      7   31          31   
+1                  0              1  2015      7   31          31   
+2                  0              1  2015      7   31          31   
+3                  0              1  2015      7   31          31   
+4                  0              1  2015      7   31          31   
+...              ...            ...   ...    ...  ...         ...   
+1017204            a              1  2013      1    1           1   
+1017205            a              1  2013      1    1           1   
+1017206            a              1  2013      1    1           1   
+1017207            a              1  2013      1    1           1   
+1017208            a              1  2013      1    1           1   
+
+         Weekofmonth  days_to_from_hol  
+0                  5                57  
+1                  5                57  
+2                  5                57  
+3                  5                57  
+4                  5                57  
+...              ...               ...  
+1017204            1                 0  
+1017205            1                 0  
+1017206            1                 0  
+1017207            1                 0  
+1017208            1                 0  
+
+[1017209 rows x 15 columns] dataset, successfully - 7
+2023-08-30 00:03:42,513 - INFO - Adding days_to/from holiday to           Id  Store  DayOfWeek       Date  Open  Promo StateHoliday  \
+0          1      1          4 2015-09-17   1.0      1            0   
+1          2      3          4 2015-09-17   1.0      1            0   
+2          3      7          4 2015-09-17   1.0      1            0   
+3          4      8          4 2015-09-17   1.0      1            0   
+4          5      9          4 2015-09-17   1.0      1            0   
+...      ...    ...        ...        ...   ...    ...          ...   
+41083  41084   1111          6 2015-08-01   1.0      0            0   
+41084  41085   1112          6 2015-08-01   1.0      0            0   
+41085  41086   1113          6 2015-08-01   1.0      0            0   
+41086  41087   1114          6 2015-08-01   1.0      0            0   
+41087  41088   1115          6 2015-08-01   1.0      0            0   
+
+       SchoolHoliday  Year  Month  Day  WeekOfYear  Weekofmonth  \
+0                  0  2015      9   17          38            3   
+1                  0  2015      9   17          38            3   
+2                  0  2015      9   17          38            3   
+3                  0  2015      9   17          38            3   
+4                  0  2015      9   17          38            3   
+...              ...   ...    ...  ...         ...          ...   
+41083              0  2015      8    1          31            1   
+41084              0  2015      8    1          31            1   
+41085              0  2015      8    1          31            1   
+41086              0  2015      8    1          31            1   
+41087              1  2015      8    1          31            1   
+
+       days_to_from_hol  
+0                    33  
+1                    33  
+2                    33  
+3                    33  
+4                    33  
+...                 ...  
+41083                14  
+41084                14  
+41085                14  
+41086                14  
+41087                14  
+
+[41088 rows x 14 columns] dataset, successfully - 7
+2023-08-30 00:04:28,402 - INFO - Adding days_to/from holiday to          Store  DayOfWeek       Date  Sales  Customers  Open  Promo  \
+0            1          5 2015-07-31   5263        555     1      1   
+1            2          5 2015-07-31   6064        625     1      1   
+2            3          5 2015-07-31   8314        821     1      1   
+3            4          5 2015-07-31  13995       1498     1      1   
+4            5          5 2015-07-31   4822        559     1      1   
+...        ...        ...        ...    ...        ...   ...    ...   
+1017204   1111          2 2013-01-01      0          0     0      0   
+1017205   1112          2 2013-01-01      0          0     0      0   
+1017206   1113          2 2013-01-01      0          0     0      0   
+1017207   1114          2 2013-01-01      0          0     0      0   
+1017208   1115          2 2013-01-01      0          0     0      0   
+
+        StateHoliday  SchoolHoliday  Year  Month  Day  WeekOfYear  \
+0                  0              1  2015      7   31          31   
+1                  0              1  2015      7   31          31   
+2                  0              1  2015      7   31          31   
+3                  0              1  2015      7   31          31   
+4                  0              1  2015      7   31          31   
+...              ...            ...   ...    ...  ...         ...   
+1017204            a              1  2013      1    1           1   
+1017205            a              1  2013      1    1           1   
+1017206            a              1  2013      1    1           1   
+1017207            a              1  2013      1    1           1   
+1017208            a              1  2013      1    1           1   
+
+         Weekofmonth  days_to_from_hol  
+0                  5                57  
+1                  5                57  
+2                  5                57  
+3                  5                57  
+4                  5                57  
+...              ...               ...  
+1017204            1                 0  
+1017205            1                 0  
+1017206            1                 0  
+1017207            1                 0  
+1017208            1                 0  
+
+[1017209 rows x 15 columns] dataset, successfully - 7
+2023-08-30 00:04:28,417 - INFO - Adding days_to/from holiday to           Id  Store  DayOfWeek       Date  Open  Promo StateHoliday  \
+0          1      1          4 2015-09-17   1.0      1            0   
+1          2      3          4 2015-09-17   1.0      1            0   
+2          3      7          4 2015-09-17   1.0      1            0   
+3          4      8          4 2015-09-17   1.0      1            0   
+4          5      9          4 2015-09-17   1.0      1            0   
+...      ...    ...        ...        ...   ...    ...          ...   
+41083  41084   1111          6 2015-08-01   1.0      0            0   
+41084  41085   1112          6 2015-08-01   1.0      0            0   
+41085  41086   1113          6 2015-08-01   1.0      0            0   
+41086  41087   1114          6 2015-08-01   1.0      0            0   
+41087  41088   1115          6 2015-08-01   1.0      0            0   
+
+       SchoolHoliday  Year  Month  Day  WeekOfYear  Weekofmonth  \
+0                  0  2015      9   17          38            3   
+1                  0  2015      9   17          38            3   
+2                  0  2015      9   17          38            3   
+3                  0  2015      9   17          38            3   
+4                  0  2015      9   17          38            3   
+...              ...   ...    ...  ...         ...          ...   
+41083              0  2015      8    1          31            1   
+41084              0  2015      8    1          31            1   
+41085              0  2015      8    1          31            1   
+41086              0  2015      8    1          31            1   
+41087              1  2015      8    1          31            1   
+
+       days_to_from_hol  
+0                    33  
+1                    33  
+2                    33  
+3                    33  
+4                    33  
+...                 ...  
+41083                14  
+41084                14  
+41085                14  
+41086                14  
+41087                14  
+
+[41088 rows x 14 columns] dataset, successfully - 7
+2023-08-30 00:04:29,136 - INFO -  Joining          Store  DayOfWeek       Date  Sales  Customers  Open  Promo  \
+0            1          5 2015-07-31   5263        555     1      1   
+1            2          5 2015-07-31   6064        625     1      1   
+2            3          5 2015-07-31   8314        821     1      1   
+3            4          5 2015-07-31  13995       1498     1      1   
+4            5          5 2015-07-31   4822        559     1      1   
+...        ...        ...        ...    ...        ...   ...    ...   
+1017204   1111          2 2013-01-01      0          0     0      0   
+1017205   1112          2 2013-01-01      0          0     0      0   
+1017206   1113          2 2013-01-01      0          0     0      0   
+1017207   1114          2 2013-01-01      0          0     0      0   
+1017208   1115          2 2013-01-01      0          0     0      0   
+
+        StateHoliday  SchoolHoliday  Year  Month  Day  WeekOfYear  \
+0                  0              1  2015      7   31          31   
+1                  0              1  2015      7   31          31   
+2                  0              1  2015      7   31          31   
+3                  0              1  2015      7   31          31   
+4                  0              1  2015      7   31          31   
+...              ...            ...   ...    ...  ...         ...   
+1017204            a              1  2013      1    1           1   
+1017205            a              1  2013      1    1           1   
+1017206            a              1  2013      1    1           1   
+1017207            a              1  2013      1    1           1   
+1017208            a              1  2013      1    1           1   
+
+         Weekofmonth  days_to_from_hol  
+0                  5                57  
+1                  5                57  
+2                  5                57  
+3                  5                57  
+4                  5                57  
+...              ...               ...  
+1017204            1                 0  
+1017205            1                 0  
+1017206            1                 0  
+1017207            1                 0  
+1017208            1                 0  
+
+[1017209 rows x 15 columns] and       Store StoreType Assortment  CompetitionDistance  \
+0         1         c          a               1270.0   
+1         2         a          a                570.0   
+2         3         a          a              14130.0   
+3         4         c          c                620.0   
+4         5         a          a              29910.0   
+...     ...       ...        ...                  ...   
+1110   1111         a          a               1900.0   
+1111   1112         c          c               1880.0   
+1112   1113         a          c               9260.0   
+1113   1114         a          c                870.0   
+1114   1115         d          c               5350.0   
+
+      CompetitionOpenSinceMonth  CompetitionOpenSinceYear  Promo2  \
+0                           9.0                    2008.0       0   
+1                          11.0                    2007.0       1   
+2                          12.0                    2006.0       1   
+3                           9.0                    2009.0       0   
+4                           4.0                    2015.0       0   
+...                         ...                       ...     ...   
+1110                        6.0                    2014.0       1   
+1111                        4.0                    2006.0       0   
+1112                        9.0                    2013.0       0   
+1113                        9.0                    2013.0       0   
+1114                        9.0                    2013.0       1   
+
+      Promo2SinceWeek  Promo2SinceYear     PromoInterval  
+0                 0.0              0.0                 0  
+1                13.0           2010.0   Jan,Apr,Jul,Oct  
+2                14.0           2011.0   Jan,Apr,Jul,Oct  
+3                 0.0              0.0                 0  
+4                 0.0              0.0                 0  
+...               ...              ...               ...  
+1110             31.0           2013.0   Jan,Apr,Jul,Oct  
+1111              0.0              0.0                 0  
+1112              0.0              0.0                 0  
+1113              0.0              0.0                 0  
+1114             22.0           2012.0  Mar,Jun,Sept,Dec  
+
+[1115 rows x 10 columns] datasets successfully - 91
+2023-08-30 00:04:29,154 - INFO - Joining store data to train and test datasets succefully - 4
+2023-08-30 00:05:17,436 - INFO - Adding days_to/from holiday to          Store  DayOfWeek       Date  Sales  Customers  Open  Promo  \
+0            1          5 2015-07-31   5263        555     1      1   
+1            2          5 2015-07-31   6064        625     1      1   
+2            3          5 2015-07-31   8314        821     1      1   
+3            4          5 2015-07-31  13995       1498     1      1   
+4            5          5 2015-07-31   4822        559     1      1   
+...        ...        ...        ...    ...        ...   ...    ...   
+1017204   1111          2 2013-01-01      0          0     0      0   
+1017205   1112          2 2013-01-01      0          0     0      0   
+1017206   1113          2 2013-01-01      0          0     0      0   
+1017207   1114          2 2013-01-01      0          0     0      0   
+1017208   1115          2 2013-01-01      0          0     0      0   
+
+        StateHoliday  SchoolHoliday  Year  Month  Day  WeekOfYear  \
+0                  0              1  2015      7   31          31   
+1                  0              1  2015      7   31          31   
+2                  0              1  2015      7   31          31   
+3                  0              1  2015      7   31          31   
+4                  0              1  2015      7   31          31   
+...              ...            ...   ...    ...  ...         ...   
+1017204            a              1  2013      1    1           1   
+1017205            a              1  2013      1    1           1   
+1017206            a              1  2013      1    1           1   
+1017207            a              1  2013      1    1           1   
+1017208            a              1  2013      1    1           1   
+
+         Weekofmonth  days_to_from_hol  
+0                  5                57  
+1                  5                57  
+2                  5                57  
+3                  5                57  
+4                  5                57  
+...              ...               ...  
+1017204            1                 0  
+1017205            1                 0  
+1017206            1                 0  
+1017207            1                 0  
+1017208            1                 0  
+
+[1017209 rows x 15 columns] dataset, successfully - 7
+2023-08-30 00:05:17,451 - INFO - Adding days_to/from holiday to           Id  Store  DayOfWeek       Date  Open  Promo StateHoliday  \
+0          1      1          4 2015-09-17   1.0      1            0   
+1          2      3          4 2015-09-17   1.0      1            0   
+2          3      7          4 2015-09-17   1.0      1            0   
+3          4      8          4 2015-09-17   1.0      1            0   
+4          5      9          4 2015-09-17   1.0      1            0   
+...      ...    ...        ...        ...   ...    ...          ...   
+41083  41084   1111          6 2015-08-01   1.0      0            0   
+41084  41085   1112          6 2015-08-01   1.0      0            0   
+41085  41086   1113          6 2015-08-01   1.0      0            0   
+41086  41087   1114          6 2015-08-01   1.0      0            0   
+41087  41088   1115          6 2015-08-01   1.0      0            0   
+
+       SchoolHoliday  Year  Month  Day  WeekOfYear  Weekofmonth  \
+0                  0  2015      9   17          38            3   
+1                  0  2015      9   17          38            3   
+2                  0  2015      9   17          38            3   
+3                  0  2015      9   17          38            3   
+4                  0  2015      9   17          38            3   
+...              ...   ...    ...  ...         ...          ...   
+41083              0  2015      8    1          31            1   
+41084              0  2015      8    1          31            1   
+41085              0  2015      8    1          31            1   
+41086              0  2015      8    1          31            1   
+41087              1  2015      8    1          31            1   
+
+       days_to_from_hol  
+0                    33  
+1                    33  
+2                    33  
+3                    33  
+4                    33  
+...                 ...  
+41083                14  
+41084                14  
+41085                14  
+41086                14  
+41087                14  
+
+[41088 rows x 14 columns] dataset, successfully - 7
+2023-08-30 00:05:18,159 - INFO -  Joining          Store  DayOfWeek       Date  Sales  Customers  Open  Promo  \
+0            1          5 2015-07-31   5263        555     1      1   
+1            2          5 2015-07-31   6064        625     1      1   
+2            3          5 2015-07-31   8314        821     1      1   
+3            4          5 2015-07-31  13995       1498     1      1   
+4            5          5 2015-07-31   4822        559     1      1   
+...        ...        ...        ...    ...        ...   ...    ...   
+1017204   1111          2 2013-01-01      0          0     0      0   
+1017205   1112          2 2013-01-01      0          0     0      0   
+1017206   1113          2 2013-01-01      0          0     0      0   
+1017207   1114          2 2013-01-01      0          0     0      0   
+1017208   1115          2 2013-01-01      0          0     0      0   
+
+        StateHoliday  SchoolHoliday  Year  Month  Day  WeekOfYear  \
+0                  0              1  2015      7   31          31   
+1                  0              1  2015      7   31          31   
+2                  0              1  2015      7   31          31   
+3                  0              1  2015      7   31          31   
+4                  0              1  2015      7   31          31   
+...              ...            ...   ...    ...  ...         ...   
+1017204            a              1  2013      1    1           1   
+1017205            a              1  2013      1    1           1   
+1017206            a              1  2013      1    1           1   
+1017207            a              1  2013      1    1           1   
+1017208            a              1  2013      1    1           1   
+
+         Weekofmonth  days_to_from_hol  
+0                  5                57  
+1                  5                57  
+2                  5                57  
+3                  5                57  
+4                  5                57  
+...              ...               ...  
+1017204            1                 0  
+1017205            1                 0  
+1017206            1                 0  
+1017207            1                 0  
+1017208            1                 0  
+
+[1017209 rows x 15 columns] and       Store StoreType Assortment  CompetitionDistance  \
+0         1         c          a               1270.0   
+1         2         a          a                570.0   
+2         3         a          a              14130.0   
+3         4         c          c                620.0   
+4         5         a          a              29910.0   
+...     ...       ...        ...                  ...   
+1110   1111         a          a               1900.0   
+1111   1112         c          c               1880.0   
+1112   1113         a          c               9260.0   
+1113   1114         a          c                870.0   
+1114   1115         d          c               5350.0   
+
+      CompetitionOpenSinceMonth  CompetitionOpenSinceYear  Promo2  \
+0                           9.0                    2008.0       0   
+1                          11.0                    2007.0       1   
+2                          12.0                    2006.0       1   
+3                           9.0                    2009.0       0   
+4                           4.0                    2015.0       0   
+...                         ...                       ...     ...   
+1110                        6.0                    2014.0       1   
+1111                        4.0                    2006.0       0   
+1112                        9.0                    2013.0       0   
+1113                        9.0                    2013.0       0   
+1114                        9.0                    2013.0       1   
+
+      Promo2SinceWeek  Promo2SinceYear     PromoInterval  
+0                 0.0              0.0                 0  
+1                13.0           2010.0   Jan,Apr,Jul,Oct  
+2                14.0           2011.0   Jan,Apr,Jul,Oct  
+3                 0.0              0.0                 0  
+4                 0.0              0.0                 0  
+...               ...              ...               ...  
+1110             31.0           2013.0   Jan,Apr,Jul,Oct  
+1111              0.0              0.0                 0  
+1112              0.0              0.0                 0  
+1113              0.0              0.0                 0  
+1114             22.0           2012.0  Mar,Jun,Sept,Dec  
+
+[1115 rows x 10 columns] datasets successfully - 91
+2023-08-30 00:05:18,175 - INFO - Joining store data to train and test datasets succefully - 4
+2023-08-30 00:05:19,461 - INFO - Changing non-numeric to numeric values, successfully - 8
+2023-08-30 00:05:19,664 - INFO - Changing non-numeric to numeric values, successfully - 8
+2023-08-30 00:05:19,821 - INFO - Changing non-numeric to numeric values, successfully - 8
+2023-08-30 00:05:20,008 - INFO - Changing non-numeric to numeric values, successfully - 8
+2023-08-30 00:05:20,008 - INFO - Changing non-numeric to numeric values, successfully - 13
+2023-08-30 00:05:20,024 - INFO - Changing non-numeric to numeric values, successfully - 13
+2023-08-30 00:05:20,024 - INFO - Changing non-numeric to numeric values, successfully - 13
+2023-08-30 00:05:20,039 - INFO - Changing non-numeric to numeric values, successfully - 13
